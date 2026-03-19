@@ -57,7 +57,7 @@
       <div class="container">
         <div class="div_text">
           <h5>about me</h5>
-          <h2><span>من هو المهندس سفيان الموسوي؟</span></h2>
+          <h2><span>من هو المدرب سفيان الموسوي؟</span></h2>
           <h4> مدرب محلي معتمد بخبرة ميدانية في تدريب الطلبة والشباب ضمن عدة تخصصات عملية   </h4>
           <!-- lorem 26 -->
           <p>
@@ -175,21 +175,30 @@
           </div>
         </div>
 
-        <form action="">
-          <div class="inpts-form">
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Mobile Number" />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              name=""
-              id=""
-              rows="10"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-          <button href="#" class="btn">Send Message</button>
-        </form>
+        <form action="https://formspree.io/f/xpqyborl" method="POST">
+
+  <div class="inpts-form">
+    
+    <input type="text" name="name" placeholder="Full Name" required />
+    
+    <input type="email" name="email" placeholder="Email" required />
+    
+    <input type="text" name="phone" placeholder="Mobile Number" />
+    
+    <input type="text" name="subject" placeholder="Subject" />
+
+    <textarea 
+      name="message"
+      rows="10"
+      placeholder="Your Message"
+      required>
+    </textarea>
+
+  </div>
+
+  <button type="submit" class="btn">Send Message</button>
+
+</form>
       </div>
     </section>
 
